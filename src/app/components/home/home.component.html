@@ -1,0 +1,595 @@
+<!--home section-->
+<section id="home" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="container text-center text-md-left" data-aos="fade-up">
+        <h1>Fashion for all</h1>
+        <h2>Mặc là đẹp</h2>
+        <a href="#about" class="btn-get-started scrollto">Khám phá ngay</a>
+        <a href="#product" class="btn-get-started scrollto">Mua hàng ngay</a>
+    </div>
+</section>
+<!-- end home -->
+
+<main class="main">
+    <!--  about section  -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col pc-6 mobile-12" data-aos="fade-right">
+                    <img src="assets/img/about-img.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col pc-6 mobile-12 pt-lg-0">
+                    <h3 data-aos="fade-up">Tổng quan về Shop</h3>
+                    <p data-aos="fade-up">
+                        Mang đến niềm vui cho hàng triệu người Việt.
+                    </p>
+                    <div class="icon-box" data-aos="fade-up">
+                        <i class="bx bx-badge-check"></i>
+                        <h4>Cam kết chất lượng</h4>
+                        <p>Với triết lý kinh doanh trên giá trị thật, HCJS thiết lập hệ thống tiêu chuẩn chất lượng quốc tế áp dụng trên tất cả quy trình quản lý và kiểm soát chất lượng từ khâu chọn lọc nguyên phụ liệu cho đến khâu thiết kế và sản xuất.
+                        </p>
+                    </div>
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="50">
+                        <i class="bx bx-happy-heart-eyes"></i>
+                        <h4>Cân bằng lợi ích</h4>
+                        <p>Cân bằng giữa lợi ích của khách hàng và lợi ích của shop để có thể cùng nhau phát triển bền vững và lâu dài.</p>
+                    </div>
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                        <i class="bx bx-trending-up"></i>
+                        <h4>Sáng tạo và phát triển</h4>
+                        <p>Tập trung mọi nguồn lực để phát huy tính sáng tạo tốt nhất, đón đầu xu hướng và không ngừng đổi mới mình.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about section -->
+
+    <!-- collection Section -->
+    <section id="collection" class="collection section-bg">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 class="w3-text-teal">Bộ sưu tập nổi bật</h2>
+            </div>
+            <div class="row">
+                <div class="col tablet-6 pc-3 d-flex justify-content-center mb-5" data-aos="fade-up">
+                    <div class="icon-box icon-box-pink">
+                        <h4 class="w3-center w3-text-pink"><i class="fa-duotone fa-flower"></i> BST mùa xuân</h4>
+                        <div class="w3-content w3-display-container " *ngFor="let img of Spring">
+                            <div class="w3-display-container slideCollection1 w3-animate-opacity">
+                                <img src="{{img}}" class="fluid">
+                                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                                    BST mùa xuân
+                                </div>
+                                <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1, 0)">&#10094;</button>
+                                <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1, 0)">&#10095;</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col tablet-6 pc-3 d-flex justify-content-center mb-5" data-aos="fade-up">
+                    <div class="icon-box icon-box-pink">
+                        <h4 class="w3-center w3-text-orange"><i class="fa-duotone fa-island-tropical"></i> BST mùa hè</h4>
+                        <div class="w3-content w3-display-container" *ngFor="let img of Summer">
+                            <div class="w3-display-container slideCollection2 w3-animate-opacity">
+                                <img src="{{img}}" class="fluid">
+                                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                                    BST mùa hè
+                                </div>
+                                <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1, 1)">&#10094;</button>
+                                <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1, 1)">&#10095;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col tablet-6 pc-3 d-flex justify-content-center mb-5" data-aos="fade-up">
+                    <div class="icon-box icon-box-pink">
+                        <h4 class="w3-center text-info"><i class="fa-duotone fa-wheat"></i> BST mùa thu</h4>
+                        <div class="w3-content w3-display-container" *ngFor="let img of Autumn">
+                            <div class="w3-display-container slideCollection3 w3-animate-opacity">
+                                <img src="{{img}}" class="fluid">
+                                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                                    BST mùa thu
+                                </div>
+                                <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1, 2)">&#10094;</button>
+                                <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1, 2)">&#10095;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col tablet-6 pc-3 d-flex justify-content-center mb-5" data-aos="fade-up">
+                    <div class="icon-box icon-box-pink">
+                        <h4 class="w3-center text-primary"><i class="fa-duotone fa-hat-winter"></i> BST mùa đông</h4>
+                        <div class="w3-content w3-display-container" *ngFor="let img of Winter">
+                            <div class="w3-display-container slideCollection4 w3-animate-opacity">
+                                <img src="{{img}}" class="fluid">
+                                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                                    BST mùa đông
+                                </div>
+                            </div>
+                            <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1, 3)">&#10094;</button>
+                            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1, 3)">&#10095;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end collection slide -->
+
+    <!-- products section -->
+    <section id="product" class="product">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2><b>Best seller</b></h2>
+            </div>
+            <div class="row" data-aos="fade-up">
+                <div class="d-flex justify-content-center">
+                    <ul id="product-filters">
+                        <li data-filter="*" class="filter-active">Tất cả</li>
+                        <li data-filter=".filter-shirt">Áo</li>
+                        <li data-filter=".filter-pants">Quần</li>
+                        <li data-filter=".filter-shoes">Giày</li>
+                        <li data-filter=".filter-accessories">Khác</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row product-container" data-aos="fade-up">
+                <div class="col pc-4 tablet-6 product-item filter-accessories">
+                    <div class="product-wrap">
+                        <img src="assets/img/product/thắt lưng.webp" class="img-fluid" alt="">
+                        <div class="product-info">
+                            <h4>Phụ kiện</h4>
+                            <p>Thắt lưng</p>
+                            <div class="product-links">
+                                <a href="assets/img/product/thắt lưng.webp" data-gallery="productGallery" class="product-lightbox"><i class="bx bx-search"></i></a>
+                                <a routerLink="/products-details" title="Xem chi tiết"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col pc-4 tablet-6 product-item filter-pants">
+                    <div class="product-wrap">
+                        <img src="assets/img/product/quần.jpg" class="img-fluid" alt="">
+                        <div class="product-info">
+                            <h4>Quần</h4>
+                            <p>Quần jogger</p>
+                            <div class="product-links">
+                                <a href="assets/img/product/quần.jpg" data-gallery="productGallery" class="product-lightbox"><i class="bx bx-search"></i></a>
+                                <a routerLink="/products-details" title="Xem chi tiết"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col pc-4 tablet-6 product-item filter-shirt">
+                    <div class="product-wrap">
+                        <img src="assets/img/product/áo.jpeg" class="img-fluid" alt="">
+                        <div class="product-info">
+                            <h4>Áo</h4>
+                            <p>Áo COOLMATE</p>
+                            <div class="product-links">
+                                <a href="assets/img/product/áo.jpeg" data-gallery="productGallery" class="product-lightbox"><i class="bx bx-search"></i></a>
+                                <a routerLink="/products-details" title="Xem chi tiết"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col pc-4 tablet-6 product-item filter-accessories">
+                    <div class="product-wrap">
+                        <img src="assets/img/product/ví.jpg" class="img-fluid" alt="">
+                        <div class="product-info">
+                            <h4>Ví</h4>
+                            <p>Ví Frezio</p>
+                            <div class="product-links">
+                                <a href="assets/img/product/ví.jpg" data-gallery="productGallery" class="product-lightbox"><i class="bx bx-search"></i></a>
+                                <a routerLink="/products-details" title="Xem chi tiết"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col pc-4 tablet-6 product-item filter-shoes">
+                    <div class="product-wrap">
+                        <img src="assets/img/product/product-1.jpg" class="img-fluid" alt="">
+                        <div class="product-info">
+                            <h4>Giày</h4>
+                            <p>Giày ko rõ tên</p>
+                            <div class="product-links">
+                                <a href="assets/img/product/product-1.jpg" data-gallery="productGallery" class="product-lightbox"><i class="bx bx-search"></i></a>
+                                <a routerLink="/products-details" title="Xem chi tiết"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col pc-4 tablet-6 product-item filter-shirt">
+                    <div class="product-wrap">
+                        <img src="assets/img/product/áo.jpg" class="img-fluid" alt="">
+                        <div class="product-info">
+                            <h4>Áo</h4>
+                            <p>Áo trắng</p>
+                            <div class="product-links">
+                                <a href="assets/img/product/áo.jpg" data-gallery="productGallery" class="product-lightbox"><i class="bx bx-search"></i></a>
+                                <a routerLink="/products-details" title="Xem chi tiết"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col pc-4 tablet-6 product-item filter-shoes">
+                    <div class="product-wrap">
+                        <img src="assets/img/product/giày.jpg" class="img-fluid" alt="">
+                        <div class="product-info">
+                            <h4>Giày</h4>
+                            <p>Giày MLB</p>
+                            <div class="product-links">
+                                <a href="assets/img/product/giày.jpg" data-gallery="productGallery" class="product-lightbox"><i class="bx bx-search"></i></a>
+                                <a routerLink="/products-details" title="Xem chi tiết"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col pc-4 tablet-6 product-item filter-accessories">
+                    <div class="product-wrap">
+                        <img src="assets/img/product/cà vạt.jpg" class="img-fluid" alt="">
+                        <div class="product-info">
+                            <h4>Cà vạt</h4>
+                            <p>Cà vạt xịn</p>
+                            <div class="product-links">
+                                <a href="assets/img/product/cà vạt.jpg" data-gallery="productGallery" class="product-lightbox"><i class="bx bx-search"></i></a>
+                                <a routerLink="/products-details" title="Xem chi tiết"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col pc-4 tablet-6 product-item filter-pants">
+                    <div class="product-wrap">
+                        <img src="assets/img/product/quần3.jpg" class="img-fluid" alt="">
+                        <div class="product-info">
+                            <h4>Quần</h4>
+                            <p>Quần đùi đen</p>
+                            <div class="product-links">
+                                <a href="assets/img/product/quần3.jpg" data-gallery="productGallery" class="product-lightbox"><i class="bx bx-search"></i></a>
+                                <a routerLink="/products-details" title="Xem chi tiết"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--team section -->
+    <section id="team" class="team faq section-bg">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Thành viên trong team</h2>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col pc-2 tablet-6" data-aos="fade-up">
+                    <div class="member">
+                        <img src="assets/img/team/Chung.jpg" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Hoàng Việt Chung</h4>
+                                <span>Chief Executive Officer</span>
+                            </div>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col pc-2 tablet-6" data-aos="fade-up">
+                    <div class="member">
+                        <img src="assets/img/team/Dũng.jpg" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Nguyễn Tiến Dũng</h4>
+                                <span>Chief Financial Officer</span>
+                            </div>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col pc-2 tablet-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member">
+                        <img src="assets/img/team/An.jpg" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Nguyễn Thế An</h4>
+                                <span>CLO (Chief Legal Officer)</span>
+                            </div>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col pc-2 tablet-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member">
+                        <img src="assets/img/team/Vanh.jpg" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Nguyễn Việt Anh</h4>
+                                <span>CMO (Chief Marketing Officer)</span>
+                            </div>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col pc-2 tablet-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="member">
+                        <img src="assets/img/team/Tuấn.jpg" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Nguyễn Xuân Tuấn</h4>
+                                <span>CCO (Chief Commercial Officer)</span>
+                            </div>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="person" class="person">
+        <div class="container">
+            <div class="person-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="person-item">
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i> 1 với 1 là 2
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                            <img src="assets/img/team/Chung.jpg" class="person-img" alt="">
+                            <h3>Hoàng Việt Chung</h3>
+                            <h4>CEO (Chief Executive Officer) &amp; Founder</h4>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="person-item">
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i> 2 với 2 là 4
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                            <img src="assets/img/team/Vanh.jpg" class="person-img" alt="">
+                            <h3>Nguyễn Việt Anh</h3>
+                            <h4>CFO (Chief Financial Officer)</h4>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="person-item">
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i> 4 với 1 là 5
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                            <img src="assets/img/team/An.jpg" class="person-img" alt="">
+                            <h3>Nguyễn Thế An</h3>
+                            <h4>CLO (Chief Legal Officer)</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="person-item">
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>5 ngón tay sạch đều
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                            <img src="assets/img/team/Tuấn.jpg" class="person-img" alt="">
+                            <h3>Nguyễn Xuân Tuấn</h3>
+                            <h4>CMO (Chief Marketing Officer)</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="person-item">
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i> ❤️❤️❤️
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p><br>
+                            <img src="assets/img/team/Dũng.jpg" class="person-img" alt="">
+                            <h3>Nguyễn Tiến Dũng</h3>
+                            <h4>CCO (Chief Commercial Officer)</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- end team section -->
+
+    <!-- charity section -->
+    <section id="charity" class="charity section-bg">
+        <div class="container ">
+            <div class="row ">
+                <div class="col pc-4 tablet-4 mobile-12 mb-5 " data-aos="fade-right ">
+                    <h2 style="color: salmon;"><i class="fa-duotone fa-hands-holding-heart"></i> Hoạt động thiện nguyện</h2>
+                    <ul class="nav nav-tabs flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
+                                <h4><i class="fa-duotone fa-house-heart"></i> Làm thiện nguyện</h4>
+                                <p>Hàng năm, HCJS trích 10% doanh thu của công ty để xây dựng trường học và mua sách vở cho trẻ em trên vùng cao.</p>
+                            </a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
+                                <h4><i class="fa-light fa-hands-holding-child"></i> HƠI ẤM MÙA ĐÔNG</h4>
+                                <p>Nếu một lần được thấy hình ảnh những em nhỏ vùng cao vượt qua mùa đông chỉ bằng những tấm áo cộc... chúng tôi tin rằng những trái tim sẽ không ngừng ước mong về một ngày các em đủ ấm. Được khởi xướng bởi nhân viên công
+                                    ty, hành trình Hơi ấm mùa đông là hành trình của hàng ngàn tấm áo ấm đến với các em nhỏ vùng cao cho mùa đông bớt khắc nghiệt.</p>
+                            </a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
+                                <h4><i class="fa-duotone fa-hand-holding-seedling"></i> ÁO MỚI CHO HÀNH TINH XANH</h4>
+                                <p>Ở HCJS, chúng tôi tin rằng, mỗi đứa trẻ đều có thể chung tay bảo vệ môi trường. Từ việc bớt sử dụng một chiếc ống hút nhựa cho đến trồng thêm một cây xanh. Mỗi năm, hàng trăm mầm xanh sẽ được chính tay các bạn nhỏ là con
+                                    em CBNV trong công ty vun trồng. Năm sau đó, các bạn sẽ được quay lại để nhìn những cây xanh đã lớn và tiếp tục gieo thêm những màu xanh.</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col pc-8 tablet-8 mobile-12 ml-auto" data-aos="fade-left">
+                    <div class="tab-content">
+                        <div class="tab-pane active show" id="tab-1">
+                            <figure>
+                                <img src="assets/img/pic1.jpg" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+                        <div class="tab-pane" id="tab-2">
+                            <figure>
+                                <img src="assets/img/pic2.jpg" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+                        <div class="tab-pane" id="tab-3">
+                            <figure>
+                                <img src="assets/img/pic3.jpg" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end charity section -->
+
+    <!-- contact section -->
+    <section id="contact" class="contact faq">
+        <div class="container">
+            <div class="contact-box p-5">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Liên hệ</h2>
+                </div>
+                <div class="row no-gutters justify-content-center" data-aos="fade-up">
+                    <div class="col pc-6 tablet-12 mobile-12 d-flex align-items-center">
+                        <div class="info">
+                            <div class="address">
+                                <i class="bi bi-geo-alt"></i>
+                                <h4>Địa chỉ:</h4>
+                                <p>8 Tôn Thất Thuyết, Mỹ Đình, Nam Từ Liêm, Hà Nội</p>
+                            </div>
+                            <div class="email mt-4">
+                                <i class="bi bi-envelope"></i>
+                                <h4>Email: </h4>
+                                <p>admin@hcjs.com</p>
+                            </div>
+
+                            <div class="phone mt-4">
+                                <i class="bi bi-phone"></i>
+                                <h4>Điện thoại:</h4>
+                                <p>+84 387 497 691</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col pc-6 tablet-12 mobile-12 d-flex align-items-center">
+                        <a href="javascript:void(0)" role="button" data-bs-toggle="modal" data-bs-target="#openMap" style="width: 100%; height:100%">
+                            <img src="/assets/img/map.jpg" alt="" width="100%" height="100%">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 pt-5 mb-5 justify-content-center " data-aos="fade-up " id="QuestionForm">
+                <div class="pc-22 pt-5 ">
+                    <form action="" method="post " role="form" class="sendQuestion">
+                        <div class="section-title" data-aos="fade-up">
+                            <h2>Đặt câu hỏi</h2>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Họ và tên" required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="email " class="form-control " name="email " id="email " placeholder="Nhập email (ví dụ: example@example.com) " required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Tiêu đề" required>
+                        </div>
+                        <div class="form-group mt-3 ">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Nhập câu hỏi của bạn..." required></textarea>
+                            <div class="my-3 ">
+                                <div class="loading ">Chờ trong giây lát</div>
+                                <div class="error-message "></div>
+                                <div class="sent-message ">Tin nhắn của bạn đã được gửi đi</div>
+                            </div>
+                            <div class="text-center "><button type="submit" class="btn-primary">Gửi tin nhắn</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- service -->
+    <section id="service" class="service section-bg">
+
+        <div class="container">
+            <div class="row no-gutters quick-info">
+                <div class="col pc-4 tablet-6 mobile-6 content-item" data-aos="fade-in">
+                    <h4><i class="fa-solid fa-truck-fast text-primary"></i> Giao hàng</h4>
+                    <p>Giao hàng trong ngày với đơn nội thành Hà Nội, 2-4 ngày với ngoại thành và tỉnh thành khác.</p>
+                </div>
+                <div class="col pc-4 tablet-6 mobile-6 content-item" data-aos="fade-in" data-aos-delay="100">
+                    <h4><i class="fa-duotone fa-credit-card text-success"></i> Thanh toán</h4>
+                    <p>Thanh toán trả trước qua banking online hoặc ví điện tử Momo, ZaloPay, ShopeePay hoặc thanh toán trả sau (COD).</p>
+                </div>
+
+                <div class="col pc-4 tablet-6 mobile-6 content-item" data-aos="fade-in" data-aos-delay="200">
+                    <h4><i class="fad fa-arrows-repeat fa-fw text-warning"></i> Đổi trả</h4>
+                    <p>Miễn phí hoàn trả trong vòng 7 ngày cho đơn hàng còn tem bị lỗi hoặc không đúng size.</p>
+                </div>
+                <div class="col pc-4 tablet-6 mobile-6 content-item" data-aos="fade-in" data-aos-delay="300">
+                    <h4><i class="fa-regular fa-ruler text-danger"></i> Hướng dẫn chọn size</h4>
+                    <br>
+                    <div class="row">
+                        <b class="mobile-12 col pc-6"><a href="javascript:void(0)" role="button" data-bs-toggle="modal" data-bs-target="#size"><i class="fa-solid fa-shirt"></i> Size quần áo</a></b>
+                        <b class="mobile-12 col pc-6"><a href="javascript:void(0)" role="button" data-bs-toggle="modal" data-bs-target="#sizeShoes"><i class="fa-solid fa-shoe-prints"></i> Size giày</a></b>
+                    </div>
+                </div>
+                <div class="col pc-4 tablet-6 mobile-6 content-item" data-aos="fade-in" data-aos-delay="400">
+                    <h4><i class="fa-duotone fa-headset text-info"></i> Hỗ trợ</h4>
+                    <span>
+                            <a href="#QuestionForm">Đặt câu hỏi.</a>
+                        </span>
+                    <span>
+                            <a href="javascript:void(0)" onclick="openForm()">Chat trực tiếp cùng hỗ trợ viên.</a>
+                        </span>
+                </div>
+
+                <div class="col pc-4 tablet-6 mobile-6 content-item" data-aos="fade-in" data-aos-delay="500">
+                    <h4><i class="fa-duotone fa-phone w3-text-deep-purple"></i> Liên hệ</h4>
+                    <p><i class="fa-duotone fa-location-dot"></i> 8 Tôn Thất Thuyết, Mỹ Đình, Nam Từ Liêm, Hà Nội</p>
+                    <p><i class="fa-regular fa-phone-rotary"></i> +84 387 497 691</p>
+                    <p><i class="fa-duotone fa-envelope"></i> admin@hcjs.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End service section -->
+</main>

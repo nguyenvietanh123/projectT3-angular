@@ -1,0 +1,248 @@
+<header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container">
+        <!-- .navbar -->
+        <nav id="navbar" class="navbar">
+            <div class="logo d-flex align-items-center">
+                <a href="index.html"><img src="assets/img/logo.png" alt="" width="auto" height="40px"></a>
+            </div>
+            <ul>
+                <li><a class="nav-link scrollto" routerLink="">Trang chủ</a></li>
+                <li class="line"></li>
+                <li><a class="nav-link scrollto" routerLink="/#about">Giới thiệu</a></li>
+                <li class="line"></li>
+                <li><a class="nav-link scrollto" href="index.html#collection">Bộ sưu tập</a></li>
+                <li class="line"></li>
+                <li class="nav-link scrollto dropdown"><a href="javascript:void(0)"><span>Sản phẩm </span><i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <a routerLink="/products" class="dropdown">Toàn bộ</a>
+                        <li class="dropdown"><a href="#"><span>Áo</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#">Áo polo</a></li>
+                                <li><a href="#">Áo sơ mi</a></li>
+                                <li><a href="#">Áo phông</a></li>
+                                <li><a href="#">Áo khoác</a></li>
+                                <li><a href="#">Bst áo đôi</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#"><span>Quần</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#">Quần jean</a></li>
+                                <li><a href="#">Quần short</a></li>
+                                <li><a href="#">Quần kaki </a></li>
+                                <li><a href="#">Quần jogger</a></li>
+                                <li><a href="#">Váy</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#"><span>Giày</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#">Giày tối giản</a></li>
+                                <li><a href="#">Giày thể thao</a></li>
+                                <li><a href="#">Giày da</a></li>
+                                <li><a href="#">Giày cao gót</a></li>
+                                <li><a href="#">Dép</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#"><span>Khác</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#">Đồng hồ</a></li>
+                                <li><a href="#">Ví da</a></li>
+                                <li><a href="#">Thắt lưng</a></li>
+                                <li><a href="#">Cà vạt</a></li>
+                                <li><a href="#">Túi sách</a></li>
+                            </ul>
+                        </li>
+                        <a class="dropdown" href="saleoff.html">
+                            Khuyến mãi
+                        </a>
+                    </ul>
+                </li>
+                <li class="line"></li>
+                <li><a class="nav-link scrollto " href="index.html#product">Sản phẩm nổi bật</a></li>
+                <div class="extra-header d-lg-none d-flex align-items-center ">
+                    <li>
+                        <a class="nav-link" href="javascript:void(0)">
+                            <div class="cntr">
+                                <div class="cntr-innr">
+                                    <label class="search d-flex align-items-center" for="input_search">
+                                        <input id="input_search" type="text" style="background-color: inherit;" placeholder="Nhập tên sản phẩm...">
+                                        <i class="fa-regular fa-magnifying-glass search-btn" style="cursor: pointer; display: none;"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" routerLink="/cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" onclick="openFormLogin()">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+            <div class="extra-header d-none d-lg-flex align-items-center ">
+                <ul>
+                    <li>
+                        <ul>
+                            <a class="nav-link" href="javascript:void(0)">
+                                <div class="cntr">
+                                    <div class="cntr-innr">
+                                        <label class="search d-flex align-items-center" for="inpt_search">
+                                    <input id="inpt_search" type="text" style="background-color: inherit;" placeholder="Tìm kiếm sản phẩm...">
+                                    <i class="fa-regular fa-magnifying-glass search-btn" style="cursor: pointer; display: none;"></i>
+                                </label>
+                                    </div>
+                                </div>
+                            </a>
+                            <li>
+                                <a class="nav-link" routerLink="/cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link" onclick="openFormLogin()">
+                                    <i class="fa-solid fa-user"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+    </div>
+    <div id="login" class="form">
+        <form action="" class="tabcontent">
+            <div class="loginForm">
+                <h2>Trang Đăng Nhập</h2>
+                <div class="form-floating input-form">
+                    <input type="text" class="form-control" id="usernameLogin" placeholder="Tên đăng nhập">
+                    <label for="usernameLogin">Tên đăng nhập</label>
+                </div>
+                <div class="form-floating input-form boxInput d-flex align-items-center">
+                    <input type="password" class="form-control" id="userPassword" placeholder="Nhập mật khẩu">
+                    <label for="userPassword">Mật khẩu</label>
+                    <span toggle="#password-field" class="fa-solid fa-eye field_icon toggle-password" style="cursor: pointer;"></span>
+                </div>
+                <div class="saveLogin">
+                    <label><input type="checkbox" name=""> Lưu Đăng Nhập</label>
+                </div>
+                <div class="input-form">
+                    <input type="submit" value="Đăng Nhập">
+                </div>
+                <div class="input-form">
+                    <p>Bạn Chưa Có Tài Khoản? <a onclick="openFormRegister()" style="cursor: pointer;">Đăng Ký</a></p>
+                    <a onclick="forgotPassword()" href="javascript:void(0)" class="text-primary">
+                        <h5>Bạn quên mật khẩu?</h5>
+                    </a>
+                </div>
+
+                <h4>Hoặc đăng nhập bằng</h4>
+
+                <ul class="socialNetworkIcon d-flex justify-content-center p-0">
+                    <a href="https://www.facebook.com/" target="_blank" class="fb">
+                        <li><i class="fa-brands fa-facebook" aria-hidden="true"></i></li>
+                    </a>
+                    <a href="https://www.google.com/" target="_blank" class="gg">
+                        <li><i class="fa-brands fa-google" aria-hidden="true"></i></li>
+                    </a>
+                    <a href="https://twitter.com/?lang=vi" target="_blank" class="tw">
+                        <li><i class="fa-brands fa-twitter" aria-hidden="true"></i></li>
+                    </a>
+                </ul>
+                <div role="button" class="btn btn-danger " onclick="closeFormm() ">Đóng</div>
+            </div>
+        </form>
+    </div>
+
+    <div id="register" class="form">
+        <form action="" class="tabcontent">
+            <div class="loginForm">
+                <h2>Trang Đăng Ký</h2>
+                <div class="form-floating input-form">
+                    <input type="text" class="form-control" id="usernameRegister" placeholder="Tên đăng nhập">
+                    <label for="usernameRegister">Tên đăng nhập</label>
+                </div>
+                <div class="form-floating input-form">
+                    <input type="email" class="form-control" id="emailRegister" placeholder="Email">
+                    <label for="emailRegister">Email</label>
+                </div>
+                <div class="form-floating input-form">
+                    <input type="text" class="form-control" id="phoneRegister" placeholder="Phone">
+                    <label for="phoneRegister">Số điện thoại</label>
+                </div>
+                <div class="form-floating input-form boxInput d-flex align-items-center">
+                    <input type="password" class="form-control" id="userPwd" placeholder="Nhập mật khẩu">
+                    <label for="userPwd">Mật khẩu</label>
+                    <span toggle="#password-field" class="fa-solid fa-eye field_icon toggle-password2" style="cursor: pointer;"></span>
+                </div>
+                <div class="form-floating input-form boxInput d-flex align-items-center">
+                    <input type="password" class="form-control" id="userPwd2" placeholder="Nhập lại mật khẩu">
+                    <label for="userPwd2">Nhập lại mật khẩu</label>
+                    <span toggle="#password-field" class="fa-solid fa-eye field_icon toggle-password3" style="cursor: pointer;"></span>
+                </div>
+                <div class="row mt-3 mb-3">
+                    <h5 class="col mobile-5">Giới Tính: </h5>
+                    <div class="mt-emoji-gender col mobile-7 d-flex justify-content-start">
+                        <input id="gender" type="checkbox" />
+                        <label for="gender"></label> </div>
+                </div>
+                <div class="input-form">
+                    <h5>Ngày sinh: </h5>
+                    <input type="date" name="birthday">
+                </div>
+                <div class="input-form">
+                    <input type="submit" value="Đăng Ký">
+                </div>
+                <h3>Hoặc đăng ký bằng</h3>
+                <ul class="socialNetworkIcon d-flex justify-content-center p-0">
+                    <a href="https://www.facebook.com/" target="_blank" class="fb">
+                        <li><i class="fa-brands fa-facebook" aria-hidden="true"></i></li>
+                    </a>
+                    <a href="https://www.google.com/" target="_blank" class="gg">
+                        <li><i class="fa-brands fa-google" aria-hidden="true"></i></li>
+                    </a>
+                    <a href="https://twitter.com/?lang=vi" target="_blank" class="tw">
+                        <li><i class="fa-brands fa-twitter" aria-hidden="true"></i></li>
+                    </a>
+                </ul>
+                <div role="button" class="btn btn-danger " onclick="closeFormm() ">Đóng</div>
+            </div>
+        </form>
+    </div>
+
+    <!-- <div id="forgotPass" class="form">
+        <form action="" class="tabcontent">
+            <div class="loginForm">
+                <h2>Khôi phục tài khoản</h2>
+                <div class="form-floating input-form">
+                    <input type="text" class="form-control" id="usernameForgotPass" placeholder="Tên đăng nhập">
+                    <label for="usernameForgotPass">Tên đăng nhập</label>
+                </div>
+                <div class="form-floating input-form">
+                    <input type="text" class="form-control" id="infoToRecover" placeholder=".">
+                    <label for="infoToRecover">Nhập SĐT hoặc email khôi phục.</label>
+                </div>
+                <p>
+                    <a href="/index.html#contact">
+
+                        <h5>
+                            <u>Chăm sóc khách hàng <i class="fa-solid fa-headset"></i></u>
+                        </h5>
+
+                    </a>
+                </p>
+                <div class="input-form">
+                    <input type="submit" value="Lấy lại mật khẩu">
+                </div>
+                <div>
+                    <div role="button" class="btn btn-primary " onclick="openFormLogin() ">Quay lại trang đăng nhập</div>
+                    <div role="button" class="btn btn-danger " onclick="closeFormm() ">Đóng</div>
+                </div>
+        </form>
+        </div> -->
+</header>
+<script src="assets/js/header.js"></script>

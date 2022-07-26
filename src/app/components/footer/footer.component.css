@@ -1,0 +1,390 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    overflow-x: hidden;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #22d8b6 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+
+/* footer */
+
+.footer section {
+    padding: 0px;
+}
+
+.footer-info .row {
+    justify-content: space-between;
+}
+
+.columSm {
+    max-width: 190px;
+}
+
+.columSm ul li {
+    margin-top: 1rem;
+}
+
+.link-box {
+    color: #fff;
+    text-transform: none;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.link-box::before {
+    content: " ";
+    position: absolute;
+    width: 30px;
+    bottom: 0;
+    left: 0;
+    border-bottom: 3px solid #ba933e;
+}
+
+
+/* pop up chat  */
+
+#open-chat {
+    background-color: rgb(14, 156, 221);
+    color: white;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+    position: fixed;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    bottom: 1.2rem;
+    right: 1.2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+    z-index: 11;
+}
+
+.animate__animated.animate__flip {
+    --animate-duration: 2s;
+}
+
+:root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+}
+
+#open-chat i {
+    font-size: 1.5rem;
+}
+
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 1.2rem;
+    z-index: 998;
+}
+
+.form-chat {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    z-index: 11;
+    border: 3px solid #f1f1f1;
+    border-radius: 25px;
+}
+
+.form-chat h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.form-chat input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.3rem;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+}
+
+.form-chat textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0 1.3rem 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+}
+
+.form-chat textarea:focus,
+input:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-chat .btn {
+    background-color: #04aa6d;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.form-chat .cancel {
+    background-color: red;
+}
+
+.form-chat .btn:hover,
+#open-chat:hover {
+    opacity: 1;
+}
+
+#open-chat:hover i,
+#open-chat:hover {
+    font-size: 2rem;
+    width: 4.2rem;
+    height: 4.2rem;
+}
+
+
+/* on top */
+
+.back-to-top {
+    z-index: 8;
+    visibility: hidden;
+    background-image: url("/assets/img/top.png");
+    position: fixed;
+    right: 2rem;
+    bottom: 6rem;
+    display: inline-block;
+    width: 26px;
+    height: 48px;
+    background-repeat: no-repeat;
+    transition: all 5s ease-in-out;
+    -webkit-transition: all 0.00001s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+.back-to-top:hover {
+    background-position: bottom;
+    height: 65px;
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.col-footer a,
+.col-footer p {
+    font-size: 15px;
+}
+
+#footerMobile {
+    display: none;
+    width: 100% !important;
+}
+
+#footerMobile .card-header {
+    background-color: #3e4551;
+}
+
+#footerMobile .accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100% !important;
+    padding: 1.15rem 1.5rem;
+    font-size: 5vw !important;
+    color: #fff;
+    background-color: #3e4551;
+    text-align: left;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    font-weight: bold;
+}
+
+#footerMobile .accordion-button:not(.collapsed):after {
+    background-image: url("/assets/img/white\ arrow.png");
+    transform: rotate(-180deg);
+}
+
+#footerMobile .accordion-button:after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url("/assets/img/white\ arrow.png");
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+#footerMobile .card {
+    border-bottom: 1px dashed #333;
+}
+
+#footerMobile .card-body {
+    background-color: #303030;
+    font-size: 3vw !important;
+    padding: 10px 0px 10px 40px;
+}
+
+#footerMobile .card-body h5 {
+    font-size: 3vw;
+}
+
+#footerMobile .accordion-button:not(.collapsed) {
+    color: #22d8b6;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+    background-color: inherit;
+}
+
+#footerMobile a,
+#footerMobile p {
+    position: relative;
+    display: block;
+    padding: 5px 15px;
+    font-size: 15px !important;
+}
+
+#footerMobile p {
+    padding: 0 15px !important;
+}
+
+#footerMobile .card-header:first-child {
+    border-radius: 0;
+}
+
+@media (max-width: 992px) {
+    #pcFooter {
+        display: none;
+    }
+    #footerMobile {
+        display: inline;
+    }
+}
+
+.subcrible-content {
+    padding: 3% 20%;
+}
+
+.email-input {
+    width: 100%;
+}
+
+.email-input input {
+    width: 100%;
+    height: 55px;
+    border-radius: 0px;
+}
+
+.email-input .row {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.subcrible-button {
+    height: 55px;
+    width: auto;
+    background-color: black;
+    color: white;
+}
+
+.social-media-icon a {
+    padding: 10px !important;
+    border-radius: 20px;
+}
+
+.social-media-icon a i {
+    font-size: 30px !important;
+}
+
+.footer-chart {
+    background: #22d8b6;
+    padding: 20px 0;
+}
+
+.footer-item {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-item .icon {
+    display: block;
+    width: auto;
+    height: 46px;
+}
+
+.footer-item .icon img {
+    -o-object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.footer-chart .text {
+    display: block;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+    .subcrible-content h1,
+    .subcrible-content h3 {
+        font-size: 3vw !important;
+    }
+    .footer-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .footer-chart .text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 920px) {
+    .subcrible-content {
+        padding: 2% 5% !important;
+    }
+}
+
+@media (max-width: 420px) {
+    .label-subcrible {
+        font-size: 12px !important;
+    }
+}

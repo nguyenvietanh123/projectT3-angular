@@ -1,0 +1,602 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    overflow-x: hidden;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+
+/* header */
+
+#header {
+    height: 70px;
+    transition: all 0.5s;
+    z-index: 997;
+    background: #000;
+}
+
+#header .logo img {
+    padding: 0;
+    margin: 0;
+    max-height: 40px;
+}
+
+.dropdown ul li {
+    z-index: 1000;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar>ul>li+li {
+    margin: 15px 5px;
+}
+
+.navbar a,
+.navbar a:focus {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    color: rgba(255, 255, 255, 0.8);
+    white-space: nowrap;
+    transition: 0.3s;
+    position: relative;
+}
+
+.extra-header li {
+    margin: 0 1rem;
+}
+
+.extra-header li a>i {
+    font-size: 2rem;
+    margin: 0 0.5rem;
+}
+
+.extra-header>ul>li>a:before,
+.navbar>ul>li>a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 3px;
+    left: 0;
+    background-color: #1bac91;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar a:hover:before,
+.navbar li:hover>a:before,
+.navbar .active:before {
+    visibility: visible;
+    width: 100%;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+    color: rgb(130, 146, 233);
+}
+
+.navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+}
+
+.navbar .dropdown ul li {
+    min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: none;
+    font-weight: 500;
+    color: #062822;
+}
+
+.navbar .dropdown ul a i {
+    font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a,
+.navbar .dropdown ul li:hover>i {
+    color: #1bac91;
+}
+
+.navbar .dropdown:hover>ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+    top: 0;
+    left: calc(100% - 30px);
+    visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover>ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+    visibility: visible;
+}
+
+.cntr {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.cntr .cntr-innr {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.search {
+    display: inline-block;
+    position: relative;
+    height: 35px;
+    width: 35px;
+    box-sizing: border-box;
+    margin: 0px 8px 7px 0px;
+    padding: 0 10px;
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    transition: all 200ms ease;
+    cursor: text;
+}
+
+.search:after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 20px;
+    right: -5px;
+    top: 21px;
+    background: #ffffff;
+    border-radius: 3px;
+    transform: rotate(-45deg);
+    transition: all 200ms ease;
+}
+
+.search.active,
+.search:hover {
+    width: 200px;
+    margin-right: 0px;
+}
+
+.search.active .search-btn,
+.search:hover .search-btn {
+    display: block !important;
+}
+
+.search.active:after,
+.search:hover:after {
+    height: 0px;
+}
+
+.search input {
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: inherit;
+    background: transparent;
+}
+
+.cntr-innr input::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+.cntr-innr input:hover::-webkit-input-placeholder,
+.cntr-innr input:focus::-webkit-input-placeholder {
+    opacity: 0.5;
+}
+
+.dropdown i {
+    font-size: 9px !important;
+}
+
+@media (max-width: 1366px) {
+    .navbar .dropdown .dropdown ul {
+        left: -90%;
+    }
+    .navbar .dropdown .dropdown:hover>ul {
+        left: -100%;
+    }
+}
+
+.mobile-nav-toggle {
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+    transition: 0.5s;
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    .navbar ul li a {
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .mobile-nav-toggle {
+        display: block;
+    }
+    .navbar ul {
+        display: none;
+    }
+    .extra-header a {
+        padding: 15px 0 !important;
+    }
+    .extra-header {
+        margin: 0;
+    }
+}
+
+.navbar-mobile {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(16, 31, 29, 0.9);
+    transition: 0.3s;
+    z-index: 0;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.navbar-mobile ul {
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 0;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: 0.3s;
+}
+
+.navbar-mobile>ul>li+li {
+    margin: 0;
+}
+
+.navbar-mobile a:hover:before,
+.navbar-mobile li:hover>a:before,
+.navbar-mobile .active:before {
+    visibility: hidden;
+}
+
+.navbar-mobile a,
+.navbar-mobile a:focus {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #21413c;
+}
+
+.navbar-mobile .search {
+    border: 3px solid #21413c;
+}
+
+.navbar-mobile .search:after {
+    background: #21413c;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover>a {
+    color: #1bac91;
+}
+
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+    margin: 15px;
+}
+
+.navbar-mobile .dropdown ul {
+    position: static;
+    display: none;
+    margin: 10px 20px;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 1;
+    visibility: visible;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+.navbar-mobile .dropdown ul li {
+    min-width: 200px;
+}
+
+.navbar-mobile .dropdown ul a {
+    padding: 10px 20px;
+}
+
+.navbar-mobile .dropdown ul a i {
+    font-size: 12px;
+}
+
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover>a {
+    color: #1bac91;
+}
+
+.navbar-mobile .dropdown>.dropdown-active {
+    display: block;
+}
+
+.line {
+    border-right: wheat 2px solid;
+    height: 15px;
+}
+
+
+/* cái breadcrumbs này nó kiểu tự động phân cấp điều hướng thôi nhé anh em */
+
+.breadcrumbs {
+    padding: 20px 0;
+    background-color: #f7f7f7;
+    min-height: 40px;
+    margin-top: 72px;
+}
+
+.breadcrumbs h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .breadcrumbs h2 {
+        margin: 0 0 10px 0;
+    }
+}
+
+.breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.breadcrumbs ol li+li {
+    padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #6c757d;
+    content: "/";
+}
+
+@media (max-width: 768px) {
+    .breadcrumbs .d-flex {
+        display: block !important;
+    }
+    .breadcrumbs ol {
+        display: block;
+    }
+    .breadcrumbs ol li {
+        display: inline-block;
+    }
+}
+
+
+/* login */
+
+.form {
+    position: fixed;
+    min-width: 370px;
+    height: auto;
+    display: none;
+    top: 70px;
+    right: 7vw;
+    z-index: 1000;
+    background-color: white;
+    border-radius: 30px;
+    border: 3px solid #f1f1f1;
+}
+
+@media (max-height: 800px) {
+    #register {
+        height: 100vh;
+        overflow: scroll !important;
+    }
+}
+
+.form .tabcontent {
+    padding: 5% 10%;
+}
+
+.form .tabcontent h2 {
+    color: #607d8b;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #ff4584;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.form .tabcontent .input-form {
+    margin-bottom: 20px;
+}
+
+.form .tabcontent .input-form label {
+    margin-bottom: 5px;
+    color: #607db8;
+    letter-spacing: 1px;
+    padding-left: 20px;
+}
+
+.form .tabcontent .input-form input {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 30px;
+}
+
+.form .tabcontent .input-form .form-control {
+    padding-top: 25px;
+}
+
+.form .tabcontent .input-form select {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 30px;
+}
+
+.form .tabcontent .input-form input[type="submit"] {
+    background: #ff4584;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+.form .tabcontent .input-form input[type="submit"]:hover {
+    background: #f53677;
+}
+
+.form .tabcontent .saveLogin {
+    margin-bottom: 10px;
+    color: #607d8b;
+    font-size: 14px;
+}
+
+.form .tabcontent .input-form p {
+    color: #607d8b;
+}
+
+.form .input-form p a {
+    color: #ff4584 !important;
+}
+
+.form .tabcontent h3 {
+    color: #607d8b;
+    text-align: center;
+}
+
+.form .tabcontent .socialNetworkIcon li {
+    list-style: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.form .tabcontent .socialNetworkIcon .fb {
+    color: #3b5999;
+}
+
+.form .tabcontent .socialNetworkIcon .gg {
+    color: #dd4b39;
+}
+
+.form .tabcontent .socialNetworkIcon .tw {
+    color: #55acee;
+}
+
+.form .tabcontent .socialNetworkIcon li i {
+    font-size: 24px;
+}
+
+.input-form i {
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.form .btn {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1.3rem;
+    border: none;
+    resize: none;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+.toggle-password,
+.toggle-password2,
+.toggle-password3 {
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+}
+
+.form .tabcontent .input-form .boxInput>.pass_log_id {
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: none !important;
+}
+
+@media (max-width: 768px) {
+    .form {
+        right: 0;
+        max-width: 100%;
+    }
+}
