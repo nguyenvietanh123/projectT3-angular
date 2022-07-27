@@ -124,7 +124,7 @@
         <div class="col tablet-12 pc-9 col mobile-12 pb-5 gird-product" style="margin-top: 70px;">
             <div id="box-list-product">
                 <div class="row products">
-                    <div class="col mobile-6 tablet-6 pc-4 filter shirt" *ngFor="let p of products">
+                    <div class="col mobile-6 tablet-6 pc-4 filter {{p.type}}" *ngFor="let p of products">
                         <div class="item-product">
                             <a routerLink="/products-details">
                                 <div class="inforBox" title="">
