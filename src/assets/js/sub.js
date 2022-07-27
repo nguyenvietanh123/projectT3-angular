@@ -141,6 +141,7 @@ function shoesSize() {
     $(".size-clothes").hide();
     $(".size-shoes").show();
 }
+
 // -------------------------- cart ---------------------------
 
 $(document).ready(function() {
